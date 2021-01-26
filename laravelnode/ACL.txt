@@ -1,0 +1,30 @@
+composer require spatie/laravel-permission
+composer require laravelcollective/html
+-------------------------------------
+-------------------------------------
+config/app.php
+
+'providers' => [
+....
+Spatie\Permission\PermissionServiceProvider::class,
+Collective\Html\HtmlServiceProvider::class,
+],
+'aliases' => [
+....
+'Form' => Collective\Html\FormFacade::class,
+'Html' => Collective\Html\HtmlFacade::class,
+],
+
+-------------------------------------
+-------------------------------------
+
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="config"
+
+-------------------------------------
+-------------------------------------
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider" --tag="migrations"
+php artisan make:migration create_products_table
+
+-------------------------------------
+-------------------------------------
+

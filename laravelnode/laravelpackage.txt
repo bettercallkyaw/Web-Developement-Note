@@ -1,0 +1,119 @@
+Spatie/laravel-permission
+Laravelcollective/html
+Laravel Cashier
+Laravel Dusk
+Laravel Envoy
+Laravel Horizon
+Laravel Socialite
+Laravel Passport
+Laravel Passport w/ Socialite
+Laravel Scout
+Laravel Telescope
+Laravel Nova
+Laravel Echo
+Laravel Valet
+Laravel Sanctum
+Inertia.js
+Jigsaw
+Livewire
+Wink
+Cachet
+Larecipe
+Laravel Zero
+Flarum
+October CMS
+Laravel Voyager
+Canvas
+Laravel Google Maps
+Nexmo & Twilio
+Pwned Validator
+reCaptcha
+Laravel Analytics
+Laravel Google Translate
+Stripe Laravel
+Laravel GitHub
+Laravel Digital Ocean
+Laravel Debugbar
+Clockwork
+Laravel N+1 Query Detector
+Laravel Self Diagnosis
+Laravel Health Panel
+Laravel Log Viewer
+Log Viewer
+PHP Insights
+Guzzle
+Zttp
+Laravel Cors
+Laravel Stats
+Laravel Backup
+BladeX
+Blade Filters
+Lambo
+Artisan View
+Open on make
+Mail Eclipse
+SEO Tools
+Laravel Collection Macros
+Collect.js
+Laravel Frontend Presets
+Laravel View Models
+ER Diagram Generator
+Laravel Enum
+Laravel Markdown
+Laravel Collective HTML
+Ziggy
+Tinkerwell
+Bear Sync
+Sushi
+jenssegers date
+Laravel Shared Data
+Blueprint
+Laravel Websockets
+Laravel Collective Errors
+Laravel Console Menu
+Laravel Shopping Cart
+Laravel Searchable
+Laravel FakeId
+Laravel Comments
+Laravel Breadcrumbs
+Laravel Befriended
+Laravel Honeypot
+Laravel Datatables
+Laravel Money
+Laravel Avatar
+Laravel Menu
+Laravel Messenger
+Feature Flags
+Laravel Translatable
+Laravel Lang
+Laravel Stats Tracker
+Laravel Vue SPA
+Laravel Sweet Alert
+Laravel Gravatar
+Simple QrCode
+Laravel Trix
+Laravel Exchange Rates
+Laravel Kustomer
+Laravel DOMPDF
+Laravel Excel
+Intervention Image
+Glide
+Laravel Invoices
+Laravel Charts
+Laravel Media Library
+Laravel Permission
+Laravel Bouncer
+Laravel Impersonate
+Laravel Masterpass
+JWT Auth
+Laravel Ban
+isAuth
+Auth Tests
+Sublime PHPUnit
+Better PHPUnit
+Laravel Test Factory Generator
+Laravel Test Tools
+Dusk Dashboard
+Paratest
+Laravel Mojito
+Pest

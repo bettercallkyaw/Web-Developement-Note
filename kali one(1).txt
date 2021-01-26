@@ -1,0 +1,130 @@
+1.date
+2.cal
+3.whoami
+4.who
+5.users
+6.uname
+7.uname -a
+8.less /etc/passwd=>exit=>use=>'q'
+9.less /etc/passwd
+10.sort mine.txt(or)cat mine.txt
+11.free
+12.free -t
+13.history
+14.Nexpost
+15.mkdir test two
+16.mkdir "test two"=>cd "test tow"
+17.leafpad text.txt(or)gedit text.txt(or)mousepad text.txt
+18.echo "Hello World"> test2.txt (or)echo "Goodbye World">>test2.txt
+19.cat test2.txt
+20.find Desktop -name test2.txt
+20.find / -name test2.txt (or)find / -name [Tt]est2.txt=>find / "test*"
+21.eg.example.deb if you want to install=>cd downloads=>dpkg -i pkg-name.deb
+22.apt-get install gimp=>apt-get update=>apt remove gimp (or) apt-get remove gimp
+23.apt list --upgradable
+24.apt update && apt upgrade && apt dist-upgrade=>apt autoremove && apt autoclean
+25.tar -cf name.tar.gz file1 file2 file3=>tar-tf
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+26.ifconfig=> ifconfig wlan0 (or)ifconfig eth0
+27.wget -m -p -E -k -K -np -v http://www.bible-history.com/ =>man wget=>wget --help
+28.https://www.google.com/advanced_search
+29.nslookup=>www.google.com /////>set type=MX=> >google.com
+30.host google.com=>host -t ns www.google.com
+
+31.You need to first update this comment =>updatedb=>when you find this find=>locate sbd.exe
+32.which sbd
+33.sbd -h
+34.find / -name sbd* -exe file {} \;
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+1.whois google.com
+2.dnsenum amazon.com
+3.https://dnsspy.io/
+4.https://viewdns.info
+
+5.root@htinkyaw:~Desktop/Sublist3r/sudo pip install -r requirements.txt
+6.root@htinkyaw:~Desktop/Sublist3r/python sublist3r.py -d conad.it -e yahoo -p 90
+7.root@htinkyaw:~Desktop/Sublist3r/python sublist3r.py -d conad.it
+8.root@htinkyaw~whatweb https://hackerone.com -v --no-errors
+9.https://www.exploit-db.com/google-hacking-database/
+
+
+10.service apach2 start and service mysql start =>in browser 127.0.0.1
+      127.0.0.1/dvwa/setup.php
+      http://127.0.0.1/dvwa/login.php
+
+11.service ssh start
+12.netstat -antp | grep sshd
+13.update-rc.d ssh enable(or)disable
+14.ifconfig (or)ifconfig |grep inet
+--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+                        
+
+14.wget www.cisco.com=>more index.html
+15.cat index.html | grep "href="
+16.cat index.html |grep "href=" |cut -d "/" -f3 |more
+17.cat index.html |grep "href=" |cut -d "/" -f3 |grep "cisco\.com" |more
+18.cat index.html |grep "href=" |cut -d "/" -f3 |grep "cisco\.com" |cut -d '"' -f1|more
+19.cat index.html |grep "href=" |cut -d "/" -f3 |grep "cisco\.com" |cut -d '"' -f1|sort -u
+20.grep -o '[A-Za-z0-9_\.-]*\.*cisco.com' index.html |sort -u
+21.host www.cisco.com
+22.host www.cisco.com |grep "has address" |cut -d " " -f4
+23.mousepad cisco.sh=>#!/bin/bash=>for url in $(cat cisco.sh); do =>host $url |grep "has address" |cut -d " " -f4=>done
+24.chmod +x cisco.sh=>./cisco.sh
+
+25.for url in $(grep -o '[A-Za-z0-9_\.-]*\.*cisco.com' index.html |sort -u);do host $url grep
+   "has address"|cut -d " " -f4;done
+
+26.for url in $(cat cisco.txt); do host $url; done | grep "has address" | cut -d" " -f4|sort -u
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+1.cd /etc/init.d=>ls
+2.etc/init.d/ssh start
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+<!--First Bash Program--->
+
+1.cat /etc/bash
+2.which bash
+3.mkdir bash/cd bash/ls=>mousepad first.sh=>#!/bin/bash->echo "Hello World..."
+4.ls -al/you can see that -rw--r--r--//we want to give his=>executable permission
+5.chmod +x first.sh
+6.Run this commant->./first.sh
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+<!--Second Bash Program---->
+1.mkdir test=>cd bash=>mosepad second.sh->write this file->(echo "This is A-file">/root/Desktop/test/a.txt
+echo "This is B-file">/root/Desktop/test/b.txt
+echo "This is C-file">/root/Desktop/test/c.txt)
+
+2.chmod +x second.sh
+---------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+<!--Third Bash Programm----->
+1.cd bash=>mousepad third.sh=>wirte this file(#!/bin/bash->eth0)
+2.give his permission
+3. ./third.sh
+------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+1.ifconfig |grep inet
+---------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
+1.ifconfig eth0
+2.ping 10.0.2.15=>ping --help=>man ping
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+- php artisan tinker
+- App\Models\User::all()
+- App\Models\User::find(1)
+
+# Eloquent Database
+- App\Models\User::find(1)->role
+- App\Models\Role::find(1)->users

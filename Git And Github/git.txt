@@ -1,0 +1,11 @@
+- git config --global user.name 'Htin Kyaw'
+- gut config --global user.email 'name@gmail.com'
+- git add .
+- git add *.html
+- git add index.html
+- git rm --cached index.html
+- git commit 
+- git branch login
+- git checkout login
+- git merge login
+- git pull

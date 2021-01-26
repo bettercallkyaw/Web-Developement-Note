@@ -1,0 +1,35 @@
+1.Css Fundamentals
+
+2.Responsive Design
+
+3.FlexBox
+
+4.Css Grid
+
+5.Animation(Transitions,KeyFrames,etc)
+
+6.Css variable,Transform,Pseudo Selectors,ect)
+
+7.Sticky Menu,Overlays,Form Styling,Landing Pages,etc
+
+8.Website Deployment - shared host&&netlify
+
+9.Sass
+
+-------------------------------------------------
+-------------------------------------------------
+-implementing css
+-using selectors
+-fonts,colors,etc
+-background&colors
+-box model/margin&padding
+-floating&alignment
+-display property
+-link&button styling
+-creating menus
+-positioning
+-form styling
+-------------------------------------------------
+-------------------------------------------------
+www.color-hex.com
+www.htmlcolorcodes.com

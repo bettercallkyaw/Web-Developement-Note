@@ -1,0 +1,114 @@
+ 1.ssh -i htin-kyaw-key.pem centos@13.229.69.149
+
+
+ 2.lsblk
+ 3.sudo su
+ 4.sudo file -s /dev/xvdb
+ 5.sudo file -s /dev/xvda
+ 6.sudo file -s /dev/xvdc
+
+
+ 7.mkfs -t ext4 /dev/xvdb
+ 8.mkfs -t ext4 /dev/xvdc
+ 9.sudo file -s /dev/xvdc
+ 10.lsblk
+
+
+ 11.mkdir /var/www
+ 12.mkdir /var/lib/mysql
+ 13.mount /dev/xvdb /var/www/
+ 14.mount /dev/xvdc /var/lib/mysql/
+ 15.lsblk
+
+
+ 16.cp /etc/fstab /etc/fstab.old
+ 17.vi /etc/fstab
+  (In the text)
+  /dev/xvdb   /var/www  ext4    defaults.nofail 0  2
+  /dev/xvdc   /var/lib/mysql    ext4  defaults.nofail  0  2
+ 18.mount -a
+
+
+ ###Open A new CMD
+ 19.sudo su
+ 20.ls -la /dev/disk/by-uuid
+ 
+
+ ###***
+ 21.sudo su
+ 22.lsblk
+ 23.swapon -s
+ 24.lsblk
+ 25.mkswap /dev/xvdf
+ 26.swapon /dev/xvdf
+ 27.lsblk
+ (vi /etc/fstab)=>(In the text )
+    /dev/xvdf   none swap sw 0 0
+(mount -a)
+
+ ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ 28.yum clean all
+ 29.yum update
+ 30.yum install epel-release
+ 31.rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+ 32.rpm -Uvh http://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+ 33.rpm -Uvh http://repo.mysql.com/mysql57-community-release-el7-11.noarch.rpm
+ 34.yum install php71w
+ 35.yum search php71w
+ 36.yum install php71w-mysql php71w-xml php71w-soap php71w-xmlrpc
+ 37.yum install php71w-mbstring php71w-json php71w-gd php71w-mcrypt
+ 38.php -v
+ 39.yum install php71w-cli
+ 40.yum --enablerepo=epel,remi install httpd
+ 41.systemctl start httpd.service
+ 42.systemctl enable httpd.service
+ 43.systemctl status httpd.service
+ 44.cd /var/www/
+ 45.cd html/
+ 46.yum install vim
+ 47.vim index.php
+
+------------------------------------------------------------------------------------------------------
+48.lsblk
+49.ls -la /var/lib/mysql
+50.cd /var/lib/mysql
+51.rm -rf *
+52.yum install mysql-server
+53.systemctl start mysqld.service
+54.systemctl status mysqld.service
+
+55.mysql_secure_installation
+56.grep 'A temporary password is generated for root@localhost' /var/log/mysqld.log |tail -1
+
+(systemctl restart mysqld.service=>systemctl enable mysqld.service=>systemctl status mysqld.service)
+
+--------------------------------------------------------------------------------------------------------
+57.yum install firewalld
+58.systemctl start firewalld.service
+59.firewall-cmd --permanent --zone=public --add-service=http
+60.firewall-cmd --permanent --zone=public --add-service=https
+61.firewall-cmd --reload
+62.httpd -v
+63.php -v
+64.mysql -V
+65.systemctl restart httpd.service
+-------------------------------------------------------------------------------------------------------
+66.CREATE USER 'remote_user'@'%' IDENTIFIED BY 'iyr%9insgP=V';
+67.GRANT ALL PRIVILEGES ON *.* To 'remote_user'@'%';
+68.DESC mysql.user;
+69.SELECT User,Host,authentication_string FROM mysql.user;
+70.FLUSH PRIVILEGES;
+
+----------------------------------------------------------------------------------------------------
+71.sudo su
+72.firewall-cmd --permanent --zone=public --add-port=3306/tcp
+73.firewall-cmd --reload
+
+---------------------------------------------------------
+sudo su
+cd /var/www/html
+ls
+cd ..
+cd ..
+ls -la www

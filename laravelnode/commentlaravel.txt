@@ -1,0 +1,15 @@
+- php artisan make:controller PersonController -r
+- php artisan make:model Person -m
+- php artisan make:model --factory Person
+- php artisan make:factory PersonFactory -m Person
+- php artisan make:seeder PersonTableSeeder
+- php artisan tinker
+- php artisan migrate --seed
+- php artisan make:migration create_people_table --create=people
+- php artisan make:resource Person
+- php artisan make:migration create_role_user_table --create=role_user
+- php artisan make:middleware AdminMiddleware
+- php artisan migrate:rollback
+- php artisan migrate:refresh
+- php artisan storage:link
+- php artisan db:seed

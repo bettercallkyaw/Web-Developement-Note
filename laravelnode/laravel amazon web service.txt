@@ -1,0 +1,58 @@
+1.ssh -i htin-kyaw-key.pem centos@13.229.69.149
+
+2.sudo su
+
+3.apt update
+
+4.apt install nginx
+
+5.apt install php php-curl php-common php-cli php-mysql php-mbstring php-fpm php-bcmath php-xml php-zip -y
+
+6.php --version
+
+7.apt install mysql-server -y
+
+8.mysql --version
+
+9.mysql_secure_installation
+
+10.SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+11.ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';
+
+12.FLUSH PRIVILEGES;
+
+13.curl -sS https://getComposer.org/installer | sudo php -- --install-dir=/usr/local/bin  --filename=composer
+
+14.cd /var/www/html
+
+15.git clone https://github.com/bm-member/bm-blog-2.git blog
+
+16.cd /etc/nginx/sites-available/
+
+17.rm default
+
+18.nano default
+
+19.nginx -t
+
+20.systemctl restart nginx
+
+21.cd /var/www/html/blog
+
+22.chmod -R 777 storage/ public/
+
+23.php artisan migrate --seed
+
+-----------------------------------------------------------------------------
+
+24.go =>cerbot.eff.org
+
+
+1.create database mvc;
+
+2.use mvc;
+
+3.CREATE TABLE users(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,name VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL,password VARCHAR(255),created_at DATETIME);
+
+4.CREATE TABLE posts(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,user_id INT,title VARCHAR(255) NOT NULL,body text NOT NULL,create_at DATETIME);

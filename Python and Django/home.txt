@@ -1,0 +1,33 @@
+# Create project
+django-admin startproject home
+
+# help manage.py
+python manage.py help
+
+cd pollster
+# Run server on http: 127.0.0.1:8000 (ctrl+c to stop)
+python manage.py runserver
+
+# Run initial migrations
+python manage.py migrate
+
+# Create  app
+python manage.py startapp pages
+python manage.py startapp listings 
+python manage.py startapp realtors 
+
+# create static file
+python manage.py collectstatic
+
+# Create polls migrations
+python manage.py makemigrations polls
+
+# Run migrations
+python manage.py migrate
+
+# Using the shell
+python manage.py shell
+
+
+
+

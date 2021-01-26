@@ -1,0 +1,13 @@
+(1)Category Table
+1.id(int)(auto_increment)
+2.name(string)
+3.created_at
+4.updated_at
+
+(2).Food Table
+1.id(int)(auto_increment)
+2.title(string)
+3.body(text)
+4.price(integer)
+5.image(string)
+6.category_id(integer)

@@ -1,0 +1,13 @@
+--php artisan tinker
+ 
+1.$faker=Faker\Factory::create();
+2.$faker->word();
+3.$faker->sentence
+4.$faker->sentences
+5.$faker->sentences(6);
+6.$faker->paragraphs(10,true)
+
+
+--php artisan tinker
+1.$date=Carbon\Carbon::now();
+2.$date->addDays(1):
