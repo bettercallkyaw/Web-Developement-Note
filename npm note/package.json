@@ -1,0 +1,18 @@
+{
+  "name": "npm-note",
+  "version": "1.0.0",
+  "description": "- npm -v\r - npm --version\r - npm init\r - npm init --yes\r - npm config set init-author-name \"John Doe\"\r - npm set init-license \"MIT\"\r - npm get init-author-name\r - npm config get init-author-name\r - npm config delete init-author-name\r - npm config delete init-license",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "live-server"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "loadsh": "0.0.4",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {}
+}
